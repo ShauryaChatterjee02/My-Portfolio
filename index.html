@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Web Developer and Machine Learning Enthusiasts</p>
+            <h1>Hi, I'm <span>Shaurya</span><br>Chattopadhyay</h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Currently pursuing a B.Tech in Computer Science Engineering (AIML) at the Institute of Engineering & Management Kolkata, I uphold an impressive CGPA of 8.08. Throughout my academic journey, I've undertaken internships at Internship Studio and Codeclause, where I worked into robust web development projects. Proficient in Java, Python, C, HTML, CSS, JavaScript, ReactJS, PHP, and Node.js, I leverage my technical prowess to develop impactful projects, including API-based applications.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('technical skills')">Technical Skills</p>
+                    <p class="tab-links" onclick="opentab('training and experience')">Training And Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="Technical skills">
+                    <ul>
+                        <li><strong>Languages:</strong> C/C++, Python, Java, JavaScript</li>
+                        <li><strong>Developer Tools:</strong> HTML/CSS, JavaScript, Node.js, Tailwind CSS, React-js, and Next-js</li>
+                        <li><strong>Database:</strong> MySQL, MongoDB</li>
+                        <li><strong>Cloud Technology:</strong> Amazon Web Services (AWS)</li>
+                    </ul>
+                </div>
+                
+                <div class="tab-contents" id="training and experience">
+                    <ol>
+                        <li>
+                            <strong>CodeClause (Jun 2023 – Jul 2023)</strong>
+                            <ul>
+                                <li>
+                                    <strong>Website Design Trainee And Intern</strong>
+                                    <ul>
+                                        <li><strong>Portfolio Website Development:</strong> Designed and developed a user-friendly portfolio website using HTML, CSS, and JavaScript, featuring responsive layouts and dynamic content for enhanced user engagement.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Internship Studio (Aug 2023 – Sep 2023)</strong>
+                            <ul>
+                                <li>
+                                    <strong>Website Development Intern</strong>
+                                    <ul>
+                                        <li><strong>URL Shortening Application:</strong> Developed a URL shortening application with HTML, CSS, and JavaScript, enhanced by ReactJS and Axios for efficient functionality. The intuitive landing page, built with HTML, CSS, and JavaScript, serves as the user interface for interacting with the application.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
+                    
+                        
+                
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li>
+                            <strong>Institute Of Engineering And Management</strong> 
+                            <span>(May 2025)</span><br>
+                            Bachelor of Technology in Computer Science and Engineering (AIML) (GPA: 8.08)<br>
+                            Kolkata, West Bengal
+                        </li>
+                        <li>
+                            <strong>LCG Institute Of Polytechnic</strong> 
+                            <span>(2022)</span><br>
+                            Diploma In Electrical Engineering (GPA: 8.68)<br>
+                            Suri, West Bengal
+                        </li>
+                        <li>
+                            <strong>Up Public School</strong> 
+                            <span>(2019)</span><br>
+                            Class X - CBSE (Percentage: 67.8)<br>
+                            Suri, West Bengal
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ----------portfolio------------ -->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images\My-Work1.png">
+                <div class="layer">
+                    <h3>Transfer Learning with InceptionV3 on CIFAR-100</h3>
+                    <p><li> Developed a Convolutional Neural Network (CNN) model using InceptionV3 architecture for image classification on
+                        the CIFAR-100 dataset.</li></p>
+                    <p><li>Augmented the dataset and assessed the model for performance, achieving a significant accuracy of 70.24%.</li></p></i>
+                </div><
+            </div>
+            <div class="work">
+                <img src="images\My-Work2.png">
+                <div class="layer">
+                    <h3>Multi-Object Tracking | Java, OpenCV </h3>
+                    <p><li> Implemented object detection and tracking using Haar Cascade and YOLOv3 models within a Java environment.
+                        .</li></p>
+                    <p><li> Utilized the Hungarian algorithm for optimizing performance in tracking multiple objects simultaneously.
+                    </li></p>
+                </div><
+            </div>
+            <div class="work">
+                <img src="images\My-Work3.png">
+                <div class="layer">
+                    <h3>Online Survey Tool | HTML, CSS, JavaScript, MySQL, PHP </h3>
+                    <p><li>  Developed a web-based survey tool facilitating secure login, customizable surveys, and robust data storage.
+                        </li></p>
+                    <p><li> Implemented data analysis features to enable informed decision-making based on survey results.
+                    </li></p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images\My-Work4.png">
+                <div class="layer">
+                    <h3>TradeBot | Python, Flask, React.js, HTML,CSS,Javascript 2024 - present</h3>
+                    <p><li>  Developing an algorithmic trading web application platform based on adaptive AI-driven variable frequency trading
+                        strategies.
+                        </li></p>
+                    
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> shauryachattopadhyay80.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> +91-7872183370</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-twitter-square"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="images\My-Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = '< add you own link here >' // add your own app script link here
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
